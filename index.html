@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/cahtgpt.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <title>CAYEY GPT</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="info-button" onclick="showInfo()"><i class="fas fa-info-circle"></i></button>
+   CAYEY
+      <button class="delete-button" onclick="confirmDeletion()"><i class="fas fa-trash-alt"></i>
+
+      </button>
+
+    </div>
+
+
+    <div class="chat-area" id="messages">
+      <div class="help" id="helpText"></div>
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="inputField" placeholder="Chatea con CAYEY">
+      <button id="sendButton" onclick="handleUserMessage()"><i class="fas fa-arrow-up"></i>
+
+      </button>
+    </div>
+
+    <div class="message-box">CAYEY puede cometer errores. Revisa la información importante.</div>
+  </div>
+
+
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <a id="downloadLink" class="download-btn" download><i class="fas fa-download"></i></a>
+      <img id="modalImage" alt="Generated image">
+    </div>
+  </div>
+
+  <head>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script>
+  </head>
+
+
+ <script src="script.js"></script>
+</body>
+
+</html>

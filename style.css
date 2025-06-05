@@ -1,0 +1,260 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #000000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 90vh;
+      margin: 0;
+      overflow: hidden;
+      font-family: "times new roman", serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      padding-top: 10px;
+
+    }
+
+    .header {
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .info-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+
+    .chat-area {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-message,
+    .assistant-message {
+
+      border-radius: 15px;
+      max-width: 75%;
+      line-height: 1.4;
+      word-wrap: break-word;
+      position: relative;
+      font-size: 1rem;
+
+    }
+
+    .user-message {
+      margin: 15px 0;
+      padding: 12px 10px;
+      background-color: #333;
+      color: white;
+      margin-left: auto;
+      text-align: left;
+    }
+
+    .assistant-message {
+      background-color: none;
+      color: #d1d5db;
+      margin-left: 5%
+
+    }
+
+    .assistant-message .typing {
+      color: #bbb;
+      font-style: italic;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 5px 20px;
+      border-radius: 50px;
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 400px;
+      width: calc(100% - 30px);
+    }
+
+    input {
+      border: none;
+      background: none;
+      color: #fff;
+      outline: none;
+      flex: 1 1 95%;
+      font-size: 1.1em;
+      padding-right: 10px;
+    }
+
+    #sendButton {
+      background: #fff;
+      border: none;
+      color: #212121;
+      cursor: pointer;
+      flex-shrink: 0;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.2rem
+    }
+
+
+
+    .message-box {
+      color: #bbb;
+      text-align: center;
+      position: fixed;
+      top: 98%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: .8rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 80%;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .help {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      font-size: 2rem;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: 900;
+    }
+/* Estilo para bloques de código */
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    code {
+      color: #dcdcdc;
+    }
+/* Estilo para regla horizontal (---) */
+    .separator {
+      border-top: 1px solid #444;
+      margin: 15px 0;
+    }
+
+    .typing::after {
+      content: '.';
+      animation: dots 1s steps(5, end) infinite;
+    }
+
+    @keyframes dots {
+
+      0%,
+      20% {
+        content: '.';
+      }
+
+      40% {
+        content: '..';
+      }
+
+      60% {
+        content: '...';
+      }
+    }
+
+
+    .modal {
+      display: none;
+  /* Oculto por defecto */
+      position: fixed;
+      z-index: 11;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: #333;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      text-align: center;
+    }
+
+    .modal img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .close-btn,
+    .download-btn {
+      position: absolute;
+      top: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .close-btn {
+      right: 10px;
+      top: 4px;
+      font-size: 2rem;
+    }
+
+    .download-btn {
+      right: 50px;
+    }
+  
