@@ -57,6 +57,11 @@
       cursor: pointer;
     }
 
+    .link{
+      text-decoration: none;
+      color:cyan;
+
+    }
 
     .chat-area {
       flex-grow: 1;

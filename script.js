@@ -255,6 +255,9 @@ CAYEY es tu asistente virtual. Empieza aquí:
 </ul>
 <p style="color: #bbb; font-size: 1rem; line-height: 1.5;">
 Usa el campo de texto en la parte inferior para escribir tus comandos o preguntas.
+<br>
+<br>
+AUTOR: DEV CODEFLOW
 </p>
   `,
       icon: 'info',
