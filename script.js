@@ -257,7 +257,7 @@ CAYEY es tu asistente virtual. Empieza aquí:
 Usa el campo de texto en la parte inferior para escribir tus comandos o preguntas.
 <br>
 <br>
-AUTOR: DEV CODEFLOW
+AUTOR: CAYEY
 </p>
   `,
       icon: 'info',
